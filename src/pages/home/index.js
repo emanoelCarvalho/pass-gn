@@ -29,10 +29,11 @@ export function Home() {
            style={styles.logo}
           />
     
-          <Text style={styles.title}>{size} Characteres</Text>
+          <Text style={styles.title}>{size} Caracteres</Text>
     
           <View style={styles.area}>
             <Slider
+
              style={{ height: 50}}
              minimumValue={6}
              maximumValue={20}
@@ -45,7 +46,7 @@ export function Home() {
           </View>
     
           <TouchableOpacity style={styles.button} onPress={generatePassword}>
-            <Text style={styles.buttonText}>Generate Password</Text>
+            <Text style={styles.buttonText}>Gerar senha</Text>
           </TouchableOpacity>
     
           <Modal visible={modalVisible} animationType="fade" transparent={true}>
