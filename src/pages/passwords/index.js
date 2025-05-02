@@ -28,7 +28,7 @@ export function Passwords() {
     return(
         <SafeAreaView style={{ flex: 1, }}>
             <View style={styles.header}>
-                <Text style={styles.title}>Minhas Senhas</Text>
+                <Text style={styles.title}>My Passwords</Text>
             </View>
 
             <View style={styles.content}>

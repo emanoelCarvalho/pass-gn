@@ -17,7 +17,7 @@ export function ModalPassword({password, handleClose}) {
     return(
         <View style={styles.container}>
             <View style={styles.content}>
-                <Text style={styles.title}>Senha gerada </Text>
+                <Text style={styles.title}>Generated password </Text>
 
                 <Pressable style={styles.innerPassword} onLongPress={handleCopyPassword}>
                     <Text style={styles.text}>
@@ -27,11 +27,11 @@ export function ModalPassword({password, handleClose}) {
 
                 <View style={styles.buttonArea}>
                     <TouchableOpacity style={styles.button} onPress={handleClose}>
-                        <Text style={styles.buttonText}>Voltar</Text>
+                        <Text style={styles.buttonText}>Back</Text>
                     </TouchableOpacity>
                     
                     <TouchableOpacity style={[styles.button, styles.buttonSave]} onPress={handleCopyPassword}>
-                        <Text style={styles.buttonSaveText}>Salvar Senha</Text>
+                        <Text style={styles.buttonSaveText}>Save Password</Text>
                     </TouchableOpacity>
                 </View>
             </View>
