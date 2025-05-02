@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { Text, StyleSheet, Pressable } from "react-native";
 
 export function PasswordItem({data, removePassword}) {
     return (
@@ -23,6 +23,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     }, 
     text: {
-        color: "#fff"
+        color: "#000"
     }
 })
