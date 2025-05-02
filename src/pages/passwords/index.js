@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Text, View, StyleSheet, FlatList } from "react-native";
 import { SafeAreaView } from "react-native";
-import useIsFocused from "@react-navigation/native"; 
+import {useIsFocused} from "@react-navigation/native"; 
 import useStorage from '../../hooks/useStorage';
 
 import { PasswordItem } from "./components/passwordItem";
