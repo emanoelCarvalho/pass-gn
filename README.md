@@ -79,5 +79,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🌐 Connect with Me
 
-- 💼 **LinkedIn**: [Emanoel Carvalho](https://www.linkedin.com/in/emanoelcarvalho/?originalSubdomain=br)
-- 🐙 **GitHub**: [emanoelCarvalho](http://github.com/emanoelCarvalho)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emanoelcarvalho/?originalSubdomain=br) 
+- [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](http://github.com/emanoelCarvalho)
