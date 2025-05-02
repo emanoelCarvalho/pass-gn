@@ -29,7 +29,7 @@ export function Home() {
            style={styles.logo}
           />
     
-          <Text style={styles.title}>{size} Caracteres</Text>
+          <Text style={styles.title}>{size} Characteres</Text>
     
           <View style={styles.area}>
             <Slider
@@ -40,12 +40,12 @@ export function Home() {
              minimumTrackTintColor='#000'
              thumbTintColor='#392de9'
              value={size}
-             onValueChange={(value) => setSize(value.toFixed(0))}
+             onValueChange={(value) => setSize(Math.round(value))}
              />
           </View>
     
           <TouchableOpacity style={styles.button} onPress={generatePassword}>
-            <Text style={styles.buttonText}>Gerar senha</Text>
+            <Text style={styles.buttonText}>Generate Password</Text>
           </TouchableOpacity>
     
           <Modal visible={modalVisible} animationType="fade" transparent={true}>
