@@ -6,20 +6,21 @@ import { ModalPassword } from '../../components/modal'
 let characterSet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{}|;:,.<>?';
 
 export function Home() {
-    const [size, setSize] = useState(8);
-    const [password, setPassword] = useState('');
-    const [modalVisible, setModalVisible] = useState(false);
+    const [size, setSize] = useState(10)
+  const [passwordValue, setPasswordValue] = useState("")
+  const [modalVisible, setModalVisible] = useState(false)
 
-    function genaretePassword() {
-        let pass = ''; 
+  function generatePassword(){
+    
+    let password= '';
 
-        for (let i = 0, n = characterSet.length; i < size; i++) {
-            pass += characterSet.charAt(Math.floor(Math.random() * n));
-        }
-
-        setPassword(pass);
-        setModalVisible(true);
+    for(let i = 0, n = characterSet.length; i < size; i++){
+        password += characterSet.charAt(Math.floor(Math.random() * n))
     }
+
+    setPasswordValue(password)
+    setModalVisible(true)
+  }
 
     return(
         <View style={styles.container}>
