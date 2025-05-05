@@ -6,7 +6,15 @@ export function PasswordItem({ data, removePassword }) {
   const isDarkMode = colorScheme === 'dark';
 
   return (
-    <Pressable onLongPress={removePassword} style={styles.container}>
+    <Pressable
+      onLongPress={removePassword}
+      style={[
+        styles.container,
+        {
+          backgroundColor: isDarkMode ? '#0e0e0e' : '#f2f2f2', 
+        }
+      ]}
+    >
       <Text style={[styles.text, { color: isDarkMode ? '#fff' : '#000' }]}>
         {data}
       </Text>
@@ -16,7 +24,6 @@ export function PasswordItem({ data, removePassword }) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#0e0e0e",
     padding: 14,
     width: "100%",
     marginBottom: 14,
